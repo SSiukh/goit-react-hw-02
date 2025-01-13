@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.title {
+  color: #d5d5d5;
+  font-size: 36px;
+}
+.description {
+  color: #d5d5d5;
+  font-size: 20px;
+}

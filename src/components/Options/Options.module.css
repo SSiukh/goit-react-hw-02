@@ -1,0 +1,23 @@
+.optionContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  width: 100%;
+}
+.button {
+  width: calc((100% - 60px) / 4);
+  height: 50px;
+  border-radius: 5px;
+  background-color: #3f5e5a;
+  border: none;
+  color: #d5d5d5;
+  font-size: 20px;
+  text-transform: capitalize;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #20fc8f;
+    color: #353831;
+  }
+}
