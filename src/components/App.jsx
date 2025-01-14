@@ -5,11 +5,9 @@ import Feedback from "./Feedback/Feedback";
 import Notification from "./Notification/Notification";
 
 function App() {
-  const [responses, setResponses] = useState({
-    good: 0,
-    neutral: 0,
-    bad: 0,
-    ...JSON.parse(window.localStorage.getItem("responses")),
+  const [responses, setResponses] = useState(() => {
+    const savedResponses = JSON.parse(window.localStorage.getItem("responses"));
+    return savedResponses || { good: 0, neutral: 0, bad: 0 };
   });
 
   useEffect(() => {
